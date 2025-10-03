@@ -4,37 +4,31 @@ public class ViolaoExercicio extends InstrumentoMusical {
     
     private int numeroCordas;
 
-    // Construtor
     public ViolaoExercicio(String nome, String material, int numeroCordas) {
         super(nome, material); // Chama o construtor da superclasse
         this.numeroCordas = numeroCordas;
     }
     
-    // ----------------------------------------------------
-    // Implementação do método abstrato da Superclasse
-    // ----------------------------------------------------
+    
     @Override
     public void tocar() {
         System.out.println("Tocando notas suaves no " + super.getNome() + " com " + numeroCordas + " cordas...");
         System.out.println("Dedilhado de uma melodia romântica.");
     }
     
-    // ----------------------------------------------------
-    // Sobrescrita (Override) e novos métodos
-    // ----------------------------------------------------
+    
     @Override
     public void afinar() {
-        super.afinar(); // Chama a implementação da superclasse
+        super.afinar(); 
         System.out.println("Apertando a tensão das " + numeroCordas + " cordas.");
     }
 
     @Override
     public void mostrarInformacoes() {
-        super.mostrarInformacoes(); // Chama a implementação da superclasse
+        super.mostrarInformacoes(); 
         System.out.println("Número de Cordas: " + numeroCordas);
     }
 
-    // Getter específico
     public int getNumeroCordas() {
         return numeroCordas;
     }
