@@ -2,10 +2,10 @@ package ucb.estudo.escolamusica;
 
 public class SaxofoneExercicio extends InstrumentoMusical {
     
-    private String tipo; // Ex: Alto, Tenor, Soprano
+    private String tipo; 
 
     public SaxofoneExercicio(String nome, String material, String tipo) {
-        super(nome, material); // Chama o construtor da superclasse
+        super(nome, material); 
         this.tipo = tipo;
     }
     
@@ -17,13 +17,13 @@ public class SaxofoneExercicio extends InstrumentoMusical {
     
     @Override
     public void afinar() {
-        super.afinar(); // Chama a implementação da superclasse
+        super.afinar(); 
         System.out.println("Ajustando a embocadura e as chaves do saxofone.");
     }
 
     @Override
     public void mostrarInformacoes() {
-        super.mostrarInformacoes(); // Chama a implementação da superclasse
+        super.mostrarInformacoes(); 
         System.out.println("Tipo: " + tipo);
     }
 }
